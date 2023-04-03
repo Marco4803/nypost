@@ -1,12 +1,14 @@
 $bigger: 1260px
 
-@mixin hide-when-short
-    @media screen and (max-width: $bigger)
-        visibility: hidden
-
 *
     margin: 0
     padding: 0
+
+
+/* Header */
+@mixin hide-when-short
+    @media screen and (max-width: $bigger)
+        visibility: hidden
 
 header
     background: #C60800
@@ -48,6 +50,7 @@ header
 
         .pagesix-logo
             @include hide-when-short
+            margin-right: 20px
 
     .header-date
         height: 20px
@@ -62,7 +65,28 @@ header
             font-weight: 600
             font-family: sans-serif
 
+/* Main content */
+.body
+    *
+        box-sizing: border-box
+    width: calc(66.5rem + (1.25rem*2))
+    margin: 0 auto
+    max-width: 100%
+    height: max-content
 
+    .main-content
+        display: grid
+        padding: 30px 20px
+        grid-template-columns: 734px 300px
+        column-gap: 30px
+        margin-bottom: 50px
+        height: max-content
 
-
-
+        main
+            height: max-content
+            width: 100%
+            background-color: green
+        aside
+            height: max-content
+            width: 100%
+            background-color: aqua

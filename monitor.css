@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+/* Header */
 header {
   background: #C60800;
 }
@@ -45,6 +46,9 @@ header .header .buttons button {
   border-radius: 3px;
   padding: 7px;
 }
+header .header .pagesix-logo {
+  margin-right: 20px;
+}
 @media screen and (max-width: 1260px) {
   header .header .pagesix-logo {
     visibility: hidden;
@@ -62,6 +66,35 @@ header .header-date p {
   font-size: 14px;
   font-weight: 600;
   font-family: sans-serif;
+}
+
+/* Main content */
+.body {
+  width: 69rem;
+  margin: 0 auto;
+  max-width: 100%;
+  height: max-content;
+}
+.body * {
+  box-sizing: border-box;
+}
+.body .main-content {
+  display: grid;
+  padding: 30px 20px;
+  grid-template-columns: 734px 300px;
+  column-gap: 30px;
+  margin-bottom: 50px;
+  height: max-content;
+}
+.body .main-content main {
+  height: max-content;
+  width: 100%;
+  background-color: green;
+}
+.body .main-content aside {
+  height: max-content;
+  width: 100%;
+  background-color: aqua;
 }
 
 /*# sourceMappingURL=monitor.css.map */
