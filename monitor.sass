@@ -195,38 +195,37 @@ header
         box-sizing: border-box
         margin-bottom: 20px
         vertical-align: baseline
-        border-image-width: 1
-        border-image-repeat: stretch
-        border-image-slice: 100%
+        width: 100%
 
         h2
             text-transform: uppercase
-            border: black 5px solid
-            display: inline-block
+            text-align: center
+            border: black 3px solid
+            display: block
             max-width: 90%
             transform: skew(-10deg)
-            a
+            box-shadow: -3px 3px 0 black
+            white-space: nowrap
 
-                border-bottom: black 3px solid
-                border-left: black 1px solid
+            a
                 text-decoration: none
-                text-transform: uppercase
-                text-align: left
                 height: auto
                 width: 100%
-                display: inline-block
-                box-shadow: -1px 1px 0 black
-                color: black
+                display: block
+                color: #C60800
                 font-weight: 600
                 font-family: "Neue Haas Display", sans-serif
                 font-size: 30px
                 line-height: 28px
                 letter-spacing: 1.5px
                 padding: 10px 15px
+                white-space: nowrap
 
-            ::before, ::after
-                content: ""
-                border-bottom: solid 3px black
-                display: inline-block
-                line-height: 20px
-                align-self: center
+
+.hot-topic::before, .hot-topic::after
+    content: ""
+    border-bottom: solid 3px black
+    display: inline-block
+    line-height: 20px
+    align-self: center
+    width: 100%
