@@ -89,12 +89,32 @@ header .header-date p {
 .body .main-content main {
   height: max-content;
   width: 100%;
-  background-color: green;
 }
 .body .main-content aside {
   height: max-content;
   width: 100%;
   background-color: aqua;
+}
+
+/* Articles */
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("fonts/neue-grotesk/NeueHaasDisplayBold.ttf");
+}
+.main-content main article {
+  width: 100%;
+  height: max-content;
+}
+.main-content main article h3 {
+  color: rgb(198, 8, 0);
+  font-weight: 500;
+  font-family: "Neue Haas Display", sans-serif;
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  line-height: 58px;
 }
 
 /*# sourceMappingURL=monitor.css.map */
