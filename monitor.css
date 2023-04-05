@@ -312,6 +312,27 @@ header .header-date p {
   text-align: left;
   display: inline;
 }
+.main-content main div.aside-articles article .flags {
+  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.main-content main div.aside-articles article .flags .flag.live {
+  background-color: #C60800;
+  padding: 2px 8px;
+  letter-spacing: 1px;
+  font-size: 13px;
+  line-height: 13px;
+  font-family: "Neue Haas Display", sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  transform: skew(-10deg);
+}
+.main-content main div.aside-articles article.bottom-article h2 {
+  margin-bottom: 0;
+}
 .main-content main .ad-segment {
   width: 100%;
   height: auto;
