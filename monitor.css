@@ -1,4 +1,9 @@
 /* Global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
   font-family: "Neue Haas Display";
   src: url("fonts/neue-grotesk/NeueHaasDisplayBold.ttf") format("truetype");
@@ -11,11 +16,6 @@
   font-weight: 500;
   font-style: normal;
 }
-* {
-  margin: 0;
-  padding: 0;
-}
-
 /* Header */
 header {
   background: #C60800;
@@ -172,6 +172,37 @@ header .header-date p {
   font-weight: 400;
   cursor: pointer;
 }
+.main-content main article .flags-article {
+  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.main-content main article .flags-article .flag.red-text {
+  letter-spacing: 0.08em;
+  font-size: 13px;
+  line-height: 13px;
+  font-family: "Neue Haas Display", sans-serif;
+  font-weight: 700;
+  color: #C60800;
+  text-align: center;
+  text-transform: uppercase;
+  transform: skew(-10deg);
+}
+.main-content main article .flags-article .flag.live {
+  background-color: #C60800;
+  padding: 2px 8px;
+  letter-spacing: 1px;
+  font-size: 13px;
+  line-height: 13px;
+  font-family: "Neue Haas Display", sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  transform: skew(-10deg);
+}
 .main-content main .articles-in-thirds {
   margin: 20px 0;
   border-top: rgb(204, 204, 204) solid 1px;
@@ -185,6 +216,17 @@ header .header-date p {
   width: 100%;
   height: 100%;
   display: block;
+}
+.main-content main .articles-in-thirds article.first {
+  padding-right: 20px;
+  border-right: solid 1px rgb(204, 204, 204);
+}
+.main-content main .articles-in-thirds article.second {
+  padding: 0 10px;
+}
+.main-content main .articles-in-thirds article.third {
+  padding-left: 20px;
+  border-left: solid 1px rgb(204, 204, 204);
 }
 .main-content main .articles-in-thirds article a {
   text-decoration: none;
@@ -248,11 +290,13 @@ header .header-date p {
 .main-content main .hot-topic h2 {
   text-transform: uppercase;
   text-align: center;
-  border: black 3px solid;
+  border-width: 3px 3px 3px 1px;
+  border-color: black;
+  border-style: solid;
   display: block;
   max-width: 90%;
   transform: skew(-10deg);
-  box-shadow: -3px 3px 0 black;
+  box-shadow: -1px 1px 0 black, -2px 2px 0 black, -3px 3px 0 black, -4px 4px 0 black, -5px 5px 0 black, -6px 6px 0 black;
   white-space: nowrap;
 }
 .main-content main .hot-topic h2 a {
@@ -273,14 +317,19 @@ header .header-date p {
 .main-content main {
   /* Main article with two articles on the side */
 }
-.main-content main .main-article-with-two-aside {
+.main-content main .main-article-with-sidebar {
   display: grid;
-  margin-bottom: 20px;
+  margin: 20px 0;
   grid-template-columns: minmax(0, 1fr) 15.375em;
   grid-gap: 1.25em;
   align-content: start;
 }
-.main-content main .main-article-with-two-aside article.main-article {
+.main-content main .main-article-with-sidebar.top-line {
+  margin-top: 0;
+  padding-top: 20px;
+  border-top: 1px solid rgb(204, 204, 204);
+}
+.main-content main .main-article-with-sidebar article.main-article {
   width: 100%;
   height: 100%;
   display: flex;
@@ -288,12 +337,12 @@ header .header-date p {
   padding-right: 20px;
   border-right: 1px solid rgb(204, 204, 204);
 }
-.main-content main .main-article-with-two-aside article.main-article h2 {
+.main-content main .main-article-with-sidebar article.main-article h2 {
   width: 100%;
   margin: 0 0 16px;
   text-align: left;
 }
-.main-content main .main-article-with-two-aside article.main-article h2 a {
+.main-content main .main-article-with-sidebar article.main-article h2 a {
   line-height: 37.8px;
   letter-spacing: -0.01em;
   font-size: 36px;
@@ -304,20 +353,20 @@ header .header-date p {
   width: 100%;
   text-align: left;
 }
-.main-content main .main-article-with-two-aside article.main-article h2 a b {
+.main-content main .main-article-with-sidebar article.main-article h2 a b {
   color: #C60800;
   font-weight: 700;
   display: inline;
   font-size: 35px;
 }
-.main-content main .main-article-with-two-aside article.main-article a img {
+.main-content main .main-article-with-sidebar article.main-article a img {
   margin-bottom: 15px;
   display: block;
   width: 100vw;
   position: relative;
   max-width: 100%;
 }
-.main-content main .main-article-with-two-aside article.main-article p a {
+.main-content main .main-article-with-sidebar article.main-article p a {
   line-height: 20px;
   letter-spacing: -0.16px;
   color: rgb(88, 88, 88);
@@ -326,13 +375,13 @@ header .header-date p {
   font-weight: 400;
   cursor: pointer;
 }
-.main-content main .main-article-with-two-aside article.main-article .flags {
+.main-content main .main-article-with-sidebar article.main-article .flags {
   margin-bottom: 5px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
 }
-.main-content main .main-article-with-two-aside article.main-article .flags .flag.live {
+.main-content main .main-article-with-sidebar article.main-article .flags .flag.live {
   background-color: #C60800;
   padding: 2px 8px;
   letter-spacing: 1px;
@@ -345,24 +394,24 @@ header .header-date p {
   text-transform: uppercase;
   transform: skew(-10deg);
 }
-.main-content main div.aside-articles {
+.main-content main .main-article-with-sidebar div.sidebar {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-.main-content main div.aside-articles article {
+.main-content main .main-article-with-sidebar div.sidebar article {
   line-height: 18px;
   margin-bottom: 20px;
 }
-.main-content main div.aside-articles article h2 {
+.main-content main .main-article-with-sidebar div.sidebar article h2 {
   width: 100%;
   text-align: left;
   padding-bottom: 16px;
   border-bottom: solid 1px rgb(204, 204, 204);
   margin-bottom: 0;
 }
-.main-content main div.aside-articles article h2 a {
+.main-content main .main-article-with-sidebar div.sidebar article h2 a {
   line-height: 1.3;
   letter-spacing: -0.01em;
   font-size: 18px;
@@ -374,13 +423,21 @@ header .header-date p {
   text-align: left;
   display: inline;
 }
-.main-content main div.aside-articles article .flags {
+.main-content main .main-article-with-sidebar div.sidebar .bottom-article {
+  margin-bottom: 0;
+}
+.main-content main .main-article-with-sidebar div.sidebar .bottom-article h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.main-content main .main-article-with-sidebar div.sidebar .flags {
   margin-bottom: 5px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
 }
-.main-content main div.aside-articles article .flags .flag.live {
+.main-content main .main-article-with-sidebar div.sidebar .flags .flag.live {
   background-color: #C60800;
   padding: 2px 8px;
   letter-spacing: 1px;
@@ -392,10 +449,44 @@ header .header-date p {
   text-align: center;
   transform: skew(-10deg);
 }
-.main-content main div.aside-articles article.bottom-article h2 {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
+.main-content main .main-article-with-sidebar div.sidebar .topic {
+  margin-top: 37px;
+  padding: 0 15px 15px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+}
+.main-content main .main-article-with-sidebar div.sidebar .topic .headline {
+  position: relative;
+  margin: -37px 0 25px 10px;
+  text-align: center;
+  z-index: 10;
+}
+.main-content main .main-article-with-sidebar div.sidebar .topic .headline h2 {
+  text-align: center;
+  transform: skew(-10deg);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 30px;
+  line-height: 28px;
+  font-family: "Neue Haas Display", sans-serif;
+  font-weight: 700;
+  color: #C60800;
+}
+.main-content main .main-article-with-sidebar div.sidebar .topic .headline h2 a {
+  display: inline-block;
+  background-color: white;
+  padding: 10px 15px;
+  border-width: 3px 3px 3px 1px;
+  border-color: black;
+  border-style: solid;
+  box-shadow: -1px 1px 0 black, -2px 2px 0 black, -3px 3px 0 black, -4px 4px 0 black, -5px 5px 0 black, -6px 6px 0 black;
+}
+.main-content main .main-article-with-sidebar div.sidebar .topic ul {
+  margin-bottom: 16px;
+}
+.main-content main .main-article-with-sidebar div.sidebar .topic ul li .image {
+  margin-bottom: 16px;
 }
 .main-content main .ad-segment {
   width: 100%;
