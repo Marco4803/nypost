@@ -275,6 +275,9 @@ header .header-date p {
   position: relative;
   max-width: 100%;
 }
+.main-content main .articles-in-thirds article h3 {
+  margin-bottom: 0;
+}
 .main-content main .articles-in-thirds article .flags {
   margin-bottom: 5px;
   display: flex;
@@ -676,6 +679,121 @@ header .header-date p {
   line-height: 20px;
   align-self: center;
   width: 100%;
+}
+
+footer {
+  border-top: 5px solid #C60800;
+  padding: 20px 20px 0;
+}
+footer section {
+  margin: 0 auto;
+  max-width: 1044px;
+  padding: 0 26px;
+}
+footer section .logo {
+  display: flex;
+  margin-bottom: 16px;
+}
+footer section .logo svg {
+  max-width: 234px;
+  height: 34px;
+}
+footer section .links {
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding-bottom: 20px;
+}
+footer section .links ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+footer section .links ul li {
+  display: list-item;
+}
+footer section .links ul li a {
+  display: inline-block;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  line-height: 15.6px;
+  letter-spacing: -0.12px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 11px;
+}
+footer section .links ul li ul {
+  display: block;
+}
+footer section .links ul li ul li {
+  line-height: 21px;
+}
+footer section .links ul li ul li a {
+  display: inline;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  line-height: 15.6px;
+  letter-spacing: -0.12px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(88, 88, 88);
+}
+footer section .links ul li ul li.nested-list {
+  margin-top: 11px;
+  margin-bottom: 16px;
+}
+footer section .links ul li ul li.nested-list a {
+  display: inline-block;
+  color: black;
+  margin: 11px 0;
+}
+footer section .links ul li ul li.nested-list ul {
+  display: block;
+}
+footer section .links ul li ul li.nested-list ul li a {
+  display: inline;
+  color: rgb(88, 88, 88);
+}
+footer section .links ul li ul.gridded {
+  display: grid;
+  column-gap: 35px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+footer .legal {
+  margin: 6px 0;
+  text-align: center;
+}
+footer .legal span {
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: -0.12px;
+  text-align: left;
+  font-weight: 400;
+  color: rgb(88, 88, 88);
+}
+footer .legal a {
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: -0.12px;
+  text-align: left;
+  font-weight: 400;
+  color: rgb(88, 88, 88);
+  padding: 0 1px 1px 5px;
+  border-left: 1px solid rgb(204, 204, 204);
+}
+footer .legal hr {
+  visibility: hidden;
+}
+footer .legal .privacy {
+  border-left: none;
+  font-weight: 700;
+}
+footer a.logo {
+  display: block;
+  text-align: center;
 }
 
 /*# sourceMappingURL=monitor.css.map */
