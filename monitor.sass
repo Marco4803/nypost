@@ -13,10 +13,21 @@ $bigger: 1260px
 
 @font-face
     font-family: "Neue Haas Display"
+    src: url("fonts/neue-grotesk/NeueHaasDisplayBoldItalic.ttf") format("truetype")
+    font-weight: 600
+    font-style: italic
+
+@font-face
+    font-family: "Neue Haas Display"
     src: url("fonts/neue-grotesk/NeueHaasDisplayBlack.ttf") format("truetype")
     font-weight: 500
     font-style: normal
 
+@font-face
+    font-family: "Neue Haas Display"
+    src: url("fonts/neue-grotesk/NeueHaasDisplayMediu.ttf") format("truetype")
+    font-weight: 900
+    font-style: normal
 
 
 /* Header */
@@ -118,6 +129,12 @@ header
         width: 100%
         height: max-content
 
+        &.top-border
+            border-top: rgb(204, 204, 204) 1px solid
+
+        &.top-padding
+            padding-top: 20px
+
         h3
             color: rgb(198, 8, 0)
             font-weight: 600
@@ -153,7 +170,7 @@ header
 
                 b
                     color: #C60800
-                    font-weight: 700
+                    font-weight: 600
                     display: inline
                     font-size: 35px
 
@@ -243,13 +260,18 @@ header
     /* Articles in thirds */
     .articles-in-thirds
         margin: 20px 0
-        border-top: rgb(204, 204, 204) solid 1px
         padding: 20px 0 0
         display: grid
         grid-template-columns: repeat(3, minmax(0, 1fr))
         column-gap: 10px
         border-top: 1px solid rgb(204, 204, 204)
 
+        &.double-col-gap
+            column-gap: 20px
+        &.no-border
+            border-top: none
+        &.no-padding
+            padding-top: 0
 
         article
             width: 100%
@@ -317,6 +339,14 @@ header
                     text-transform: uppercase
                     transform: skew(-10deg)
 
+                .flag.bordered
+                    padding: 1px 8px
+                    border: #C60800 1px solid
+
+                .flag.centered
+                    text-align: center
+
+
     /* Hot topic header */
     .hot-topic
         display: flex
@@ -366,6 +396,11 @@ header
             margin-top: 0
             padding-top: 20px
             border-top: 1px solid rgb(204, 204, 204)
+
+        &.bottom-line
+            padding-bottom: 20px
+            border-bottom: 1px solid rgb(204, 204, 204)
+
 
         article.main-article
             width: 100%
@@ -507,7 +542,7 @@ header
                         font-size: 30px
                         line-height: 28px
                         font-family: "Neue Haas Display", sans-serif
-                        font-weight: 700
+                        font-weight: 600
                         color: #C60800
 
                         a
@@ -520,11 +555,37 @@ header
                             box-shadow: -1px 1px 0 black,-2px 2px 0 black,-3px 3px 0 black,-4px 4px 0 black,-5px 5px 0 black,-6px 6px 0 black
 
                 ul
+                    list-style: none
                     margin-bottom: 16px
 
                     li
-                        .image
+                        margin-top: 15px
+                        padding-top: 15px
+                        border-top: solid 1px rgb(204, 204, 204)
+
+                        a img
                             margin-bottom: 16px
+                            display: block
+                            width: 100vw
+                            position: relative
+                            overflow-clip-margin: content-box
+                            max-width: 100%
+
+                        h3
+                            text-align: left
+                            letter-spacing: -0.03em
+                            font-size: 15px
+                            line-height: 17px
+                            font-family: "Neue Haas Display", sans-serif
+                            font-weight: 900
+                            color: black
+
+
+                    li:first-child
+                        margin-top: 0
+                        padding-top: 0
+                        border-top: none
+
 
 
 
@@ -558,6 +619,96 @@ header
             color: rgb(88, 88, 88)
             width: 100%
             text-align: center
+
+    .header-line-through
+        margin: 20px 0
+        padding: 20px 0 0
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        position: relative
+
+        &::before
+            background-color: black
+            content: ""
+            display: block
+            height: 3px
+            left: 0
+            position: absolute
+            top: calc(50% + 4px)
+            width: calc(100% - 1px)
+            z-index: 0
+
+
+
+        .left
+            padding: 0 20px 0 25px
+            margin-bottom: 6px
+
+            h3
+                margin-right: 0
+                text-transform: uppercase
+                text-align: center
+                border-width: 3px 3px 3px 1px
+                border-color: black
+                border-style: solid
+                margin-block: 0
+                max-width: 100%
+                transform: skew(-10deg)
+                box-shadow: -1px 1px 0 black,-2px 2px 0 black,-3px 3px 0 black,-4px 4px 0 black,-5px 5px 0 black,-6px 6px 0 black
+                white-space: nowrap
+
+                a
+                    background-color: white
+                    text-decoration: none
+                    height: auto
+                    width: 100%
+                    display: block
+                    color: #C60800
+                    font-weight: 600
+                    font-family: "Neue Haas Display", sans-serif
+                    font-size: 30px
+                    line-height: 28px
+                    letter-spacing: 1.5px
+                    padding: 10px 15px
+                    white-space: nowrap
+
+        .center
+            margin-bottom: 7px
+            display: flex
+            align-items: center
+
+            h4
+                padding: 0 10px
+                background-color: white
+                color: black
+                font-weight: 600
+                font-family: "Neue Haas Display", sans-serif
+                font-style: italic
+                font-size: 18px
+                line-height: 17px
+                letter-spacing: -.01em
+                z-index: 1
+                text-transform: uppercase
+
+        .right
+            padding-left: 10px
+            display: flex
+            align-items: center
+            background-color: white
+            z-index: 1
+
+            a
+                margin-bottom: 10px
+
+                span
+                    color: black
+                    text-transform: uppercase
+                    font-weight: 600
+                    font-family: "Neue Haas Display", sans-serif
+                    font-size: 13px
+                    line-height: 14px
+                    letter-spacing: 1.04px
 
 
 
