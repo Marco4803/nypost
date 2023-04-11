@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Global */
 * {
   margin: 0;
@@ -963,18 +964,23 @@ header .header-date p {
 }
 .main-content aside .columnists {
   border: 1px solid rgb(204, 204, 204);
+  margin-block-end: 10px;
+  margin-top: 20px;
 }
 .main-content aside .columnists h1 {
+  float: left;
   padding: 15px 20px 0;
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   height: max-content;
   margin-block-end: 10px;
 }
 .main-content aside .columnists h1 a {
+  float: left;
+  display: inline-block;
   color: black;
   text-transform: uppercase;
+  font-style: italic;
   font-weight: 600;
   font-family: "Neue Haas Display", sans-serif;
   font-size: 23px;
@@ -985,6 +991,67 @@ header .header-date p {
   margin: 2px -2px 0 -20px;
   height: 8px;
   background-color: #C60800;
+  content: "";
+}
+.main-content aside .columnists ul {
+  list-style: none;
+  margin-top: 60px;
+}
+.main-content aside .columnists ul li {
+  padding: 0 20px 28px;
+  border-bottom: 8px solid black;
+}
+.main-content aside .columnists ul li:last-child {
+  border-bottom: none;
+}
+.main-content aside .columnists ul li h3 {
+  display: block;
+  position: relative;
+  margin-bottom: 16px;
+}
+.main-content aside .columnists ul li h3 a {
+  display: block;
+  padding: 16px 0;
+  color: #C60800;
+  font-weight: 600;
+  font-family: "Neue Haas Display", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.45px;
+}
+.main-content aside .columnists ul li h3 img {
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+}
+.main-content aside .columnists ul li h4 {
+  display: block;
+}
+.main-content aside .columnists ul li h4 a {
+  display: block;
+  color: black;
+  font-weight: 700;
+  font-family: "Neue Haas Display", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.45px;
+}
+.main-content aside .columnists h4.col {
+  text-align: right;
+  padding: 0 27px 22px 0;
+}
+.main-content aside .columnists h4.col a {
+  color: black;
+  font-weight: 600;
+  font-family: "Neue Haas Display", sans-serif;
+  font-size: 13px;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.04px;
+}
+.main-content aside .columnists h4.col a::after {
+  content: "▶";
+  padding-left: 6px;
 }
 
 /* Hot topic before/after */
