@@ -120,7 +120,6 @@ header
         aside
             height: max-content
             width: 100%
-            background-color: aqua
 
 
 /* Articles */
@@ -459,6 +458,7 @@ header
                         width: 100%
                         text-align: left
                         display: inline
+
             .bottom-article
                 margin-bottom: 0
                 h2
@@ -733,6 +733,266 @@ header
                         font-size: 16px
                         line-height: 18px
                         font-weight: 600
+
+
+    .videos-category
+        margin: 30px 0 20px
+
+        .category-name
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border-top: 2px solid black
+            border-bottom: 1px solid rgb(204, 204, 204)
+            padding: 6px 0
+            margin-bottom: 16px
+
+            h2 a
+                display: flex
+                justify-content: space-between
+                align-items: center
+
+                span
+                    color: #C60800
+                    text-transform: uppercase
+                    font-weight: 600
+                    font-family: "Neue Haas Display", sans-serif
+                    font-size: 18px
+                    line-height: .85
+                    letter-spacing: 1.08px
+            a span
+                color: black
+                text-transform: uppercase
+                font-weight: 600
+                font-family: "Neue Haas Display", sans-serif
+                font-size: 13px
+                line-height: 14.3px
+                letter-spacing: 1.04px
+
+        .videos
+            display: grid
+            grid-template-columns: minmax(0, 1fr) 335px
+            grid-gap: 20px
+
+            .main-video
+                h3
+                    width: 100%
+                    text-align: left
+                    margin: -35px 0 16px
+
+                    a
+                        line-height: 24px
+                        letter-spacing: -0.22px
+                        font-size: 22px
+                        font-family: "Neue Haas Display", sans-serif
+                        font-weight: 600
+                        cursor: pointer
+                        color: black
+                        width: 100%
+                        text-align: left
+
+                a
+                    img
+                        margin-bottom: 15px
+                        display: block
+                        width: 100vw
+                        position: relative
+                        max-width: 100%
+
+                span
+                    position: relative
+                    left: 10px
+                    bottom: 55px
+                    z-index: 1
+
+                    svg
+                        max-width: 30px
+                        max-height: 30px
+
+
+        div.other-videos
+            width: 100%
+            height: 100%
+            display: flex
+            flex-direction: column
+
+            .video
+                a
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-between
+                    position: relative
+                    padding-bottom: 20px
+
+                    h3
+                        height: 3px
+                        float: right
+                        text-align: left
+                        line-height: 17px
+                        letter-spacing: -0.45px
+                        font-size: 15px
+                        font-family: "Neue Haas Display", sans-serif
+                        font-weight: 700
+                        cursor: pointer
+                        color: black
+                        width: 100%
+
+                    img
+                        margin-right: 15px
+                        width: 9rem
+                        height: auto
+
+                    span
+                        position: absolute
+                        left: 10px
+                        bottom: 30px
+                        z-index: 1
+
+                        svg
+                            max-width: 30px
+                            max-height: 30px
+
+            .video.last
+                a
+                    padding-bottom: 0
+                span
+                    bottom: 10px
+
+
+.main-content aside
+    .follow-us
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 20px
+        padding: 10px 0
+        border-top: 3px solid black
+        border-bottom: 3px solid black
+
+        h4
+            line-height: 15px
+            letter-spacing: 0.96px
+            font-size: 16px
+            font-family: "Neue Haas Display", sans-serif
+            font-weight: 600
+            text-transform: uppercase
+            color: #C60800
+
+    .newsletter
+        margin-top: 20px
+
+        .category-name
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border-top: 2px solid black
+            border-bottom: 1px solid rgb(204, 204, 204)
+            padding: 6px 0
+            margin-bottom: 16px
+
+            h2 a
+                display: flex
+                justify-content: space-between
+                align-items: center
+                color: #C60800
+                text-transform: uppercase
+                font-weight: 600
+                font-family: "Neue Haas Display", sans-serif
+                font-size: 18px
+                line-height: .85
+                letter-spacing: 1.08px
+
+        img
+            margin: 0 20px 20px
+
+        .image
+            display: flex
+            align-self: center
+            justify-content: center
+            padding-bottom: 15px
+
+        h4
+            margin: 0 20px 10px
+            font-weight: 600
+            font-family: "Neue Haas Display", sans-serif
+            font-size: 16px
+            line-height: 24px
+            letter-spacing: -0.22px
+            text-align: center
+
+        h3
+            margin: 0 20px 10px
+            font-weight: 600
+            font-family: "Neue Haas Display", sans-serif
+            font-size: 16px
+            line-height: 17.6px
+            letter-spacing: -0.16px
+
+        p
+            margin: 0 20px
+            font-weight: 400
+            font-family: Arial, sans-serif
+            font-size: 16px
+            line-height: 20px
+            letter-spacing: -0.16px
+            color: rgb(88, 88, 88)
+
+            a
+                color: #C60800
+
+        .signup
+            margin-top: 20px
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+            &::before, &::after
+                content: ""
+                border-bottom: solid 3px black
+                display: inline-block
+                line-height: 20px
+                align-self: center
+                width: 100%
+
+            h6
+                width: max-content
+                padding: 0 10px
+
+                a
+                    font-weight: 600
+                    display: inline-block
+                    font-family: "Neue Haas Display", sans-serif
+                    font-size: 13px
+                    line-height: 14-3px
+                    letter-spacing: 1.04px
+                    text-transform: uppercase
+                    text-align: center
+                    white-space: nowrap
+
+    .columnists
+        border: 1px solid rgb(204, 204, 204)
+
+        h1
+            padding: 15px 20px 0
+            margin-bottom: 10px
+            display: flex
+            flex-direction: column
+            height: max-content
+            margin-block-end: 10px
+
+            a
+                color: black
+                text-transform: uppercase
+                font-weight: 600
+                font-family: "Neue Haas Display", sans-serif
+                font-size: 23px
+                line-height: 16.8px
+                letter-spacing: -0.23px
+
+            &::after
+                margin: 2px -2px 0 -20px
+                height: 8px
+                background-color: #C60800
 
 
 
