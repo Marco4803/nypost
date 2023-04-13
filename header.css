@@ -34,20 +34,28 @@ header {
   background: #C60800;
 }
 header .header {
-  height: 46px;
-  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
   max-width: 1260px;
   background: #C60800;
 }
+@media screen and (min-width: 768px) {
+  header .header {
+    height: 46px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .header {
+    height: 32px;
+    padding: 10px 13px;
+  }
+}
 header .header .buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 header .header .buttons img {
@@ -56,6 +64,11 @@ header .header .buttons img {
   margin-right: 10px;
   cursor: pointer;
   margin-left: 20px;
+}
+@media screen and (min-width: 1024px) {
+  header .header .buttons img {
+    visibility: visible;
+  }
 }
 @media screen and (max-width: 1024px) {
   header .header .buttons img {
@@ -80,6 +93,16 @@ header .header .buttons button .menu-text {
   letter-spacing: 0.04em;
   margin-left: 7px;
 }
+@media screen and (min-width: 768px) {
+  header .header .buttons button .menu-text {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .header .buttons button .menu-text {
+    display: none;
+  }
+}
 header .header .buttons button .menu-icon {
   padding: 0;
   height: 14px;
@@ -94,10 +117,36 @@ header .header .buttons button .menu-icon span {
   width: 16px;
 }
 header .header .logo {
-  height: 55px;
+  justify-content: center;
+  position: relative;
+}
+header .header .logo svg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 768px) {
+  header .header .logo svg {
+    height: 55px;
+    width: 370px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .header .logo svg {
+    height: 32px;
+    width: 215px;
+  }
 }
 header .header .pagesix-logo {
   margin-right: 20px;
+  padding-right: 5px;
+}
+@media screen and (min-width: 1024px) {
+  header .header .pagesix-logo {
+    visibility: visible;
+  }
 }
 @media screen and (max-width: 1024px) {
   header .header .pagesix-logo {
@@ -106,10 +155,19 @@ header .header .pagesix-logo {
 }
 header .header-date {
   height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: black;
+}
+@media screen and (min-width: 768px) {
+  header .header-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .header-date {
+    display: none;
+  }
 }
 header .header-date p {
   color: #fff;

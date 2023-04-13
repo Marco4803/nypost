@@ -1,31 +1,40 @@
 @use "global.css"
 
 $bigger: 1024px
+$medium: 768px
 
 
 /* Header */
 @mixin hide-when-short
+    @media screen and (min-width: $bigger)
+        visibility: visible
     @media screen and (max-width: $bigger)
         visibility: hidden
+
+
 
 header
     background: #C60800
 
     .header
-        height: 46px
-        padding: 20px
+        @media screen and (min-width: $medium)
+            height: 46px
+            padding: 20px
+        @media screen and (max-width: $medium)
+            height: 32px
+            padding: 10px 13px
+
         display: flex
         align-items: center
         justify-content: space-between
-        position: relative
-        left: 50%
-        transform: translateX(-50%)
+
+        margin: 0 auto
         max-width: 1260px
         background: #C60800
 
         .buttons
             display: flex
-            justify-content: center
+            justify-content: flex-start
             align-items: center
 
             img
@@ -48,6 +57,11 @@ header
                 padding: 7px
 
                 .menu-text
+                    @media screen and (min-width: $medium)
+                        display: block
+                    @media screen and (max-width: $medium)
+                        display: none
+
                     color: #fff
                     font-family: "Neue Haas Display", sans-serif
                     font-size: 14px
@@ -70,18 +84,37 @@ header
                         width: 16px
 
         .logo
-            height: 55px
+            justify-content: center
+            position: relative
+
+            svg
+                @media screen and (min-width: $medium)
+                    height: 55px
+                    width: 370px
+                @media screen and (max-width: $medium)
+                    height: 32px
+                    width: 215px
+                z-index: 1
+                position: absolute
+                top: 0
+                left: 0
+                transform: translate(-50%, -50%)
 
 
         .pagesix-logo
             @include hide-when-short
             margin-right: 20px
+            padding-right: 5px
 
     .header-date
+        @media screen and (min-width: $medium)
+            display: flex
+            align-items: center
+            justify-content: center
+        @media screen and (max-width: $medium)
+            display: none
+
         height: 20px
-        display: flex
-        align-items: center
-        justify-content: center
         background-color: black
 
         p
