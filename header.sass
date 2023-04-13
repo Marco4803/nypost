@@ -1,6 +1,6 @@
 @use "global.css"
 
-$bigger: 1260px
+$bigger: 1024px
 
 
 /* Header */
@@ -37,16 +37,41 @@ header
                 margin-left: 20px
 
             button
+                display: flex
+                align-items: center
+                justify-content: space-between
+
                 background: #C60800
-                color: #fff
-                font-family: "Neue Haas Display", sans-serif
-                font-size: 14px
-                font-weight: 600
-                letter-spacing: 0.04em
                 cursor: pointer
                 border: white solid 1px
-                border-radius: 3px
+                border-radius: 2px
                 padding: 7px
+
+                .menu-text
+                    color: #fff
+                    font-family: "Neue Haas Display", sans-serif
+                    font-size: 14px
+                    font-weight: 600
+                    letter-spacing: 0.04em
+                    margin-left: 7px
+
+                .menu-icon
+                    padding: 0
+                    height: 14px
+                    width: 16px
+
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+
+                    span
+                        background-color: white
+                        height: 2px
+                        width: 16px
+
+        .logo
+            height: 55px
+
 
         .pagesix-logo
             @include hide-when-short
@@ -61,7 +86,7 @@ header
 
         p
             color: #fff
-            font-size: 14px
-            font-weight: 600
-            font-family: "Neue Haas Display", sans-serif
+            font-size: 12px
+            font-weight: 700
+            font-family: Arial, sans-serif
 
