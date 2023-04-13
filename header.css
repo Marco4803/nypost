@@ -1,0 +1,99 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("fonts/neue-grotesk/NeueHaasDisplayBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("fonts/neue-grotesk/NeueHaasDisplayBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("fonts/neue-grotesk/NeueHaasDisplayBlack.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("fonts/neue-grotesk/NeueHaasDisplayMediu.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Header */
+header {
+  background: #C60800;
+}
+header .header {
+  height: 46px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1260px;
+  background: #C60800;
+}
+header .header .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header .buttons img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+@media screen and (max-width: 1260px) {
+  header .header .buttons img {
+    visibility: hidden;
+  }
+}
+header .header .buttons button {
+  background: #C60800;
+  color: #fff;
+  font-family: "Neue Haas Display", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: white solid 1px;
+  border-radius: 3px;
+  padding: 7px;
+}
+header .header .pagesix-logo {
+  margin-right: 20px;
+}
+@media screen and (max-width: 1260px) {
+  header .header .pagesix-logo {
+    visibility: hidden;
+  }
+}
+header .header-date {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+header .header-date p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Neue Haas Display", sans-serif;
+}
+
+/*# sourceMappingURL=header.css.map */

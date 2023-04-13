@@ -1,96 +1,4 @@
-$bigger: 1260px
-
-/* Global */
-*
-    margin: 0
-    padding: 0
-
-@font-face
-    font-family: "Neue Haas Display"
-    src: url("fonts/neue-grotesk/NeueHaasDisplayBold.ttf") format("truetype")
-    font-weight: 600
-    font-style: normal
-
-@font-face
-    font-family: "Neue Haas Display"
-    src: url("fonts/neue-grotesk/NeueHaasDisplayBoldItalic.ttf") format("truetype")
-    font-weight: 600
-    font-style: italic
-
-@font-face
-    font-family: "Neue Haas Display"
-    src: url("fonts/neue-grotesk/NeueHaasDisplayBlack.ttf") format("truetype")
-    font-weight: 500
-    font-style: normal
-
-@font-face
-    font-family: "Neue Haas Display"
-    src: url("fonts/neue-grotesk/NeueHaasDisplayMediu.ttf") format("truetype")
-    font-weight: 900
-    font-style: normal
-
-
-/* Header */
-@mixin hide-when-short
-    @media screen and (max-width: $bigger)
-        visibility: hidden
-
-header
-    background: #C60800
-
-    .header
-        height: 46px
-        padding: 20px
-        display: flex
-        align-items: center
-        justify-content: space-between
-        position: relative
-        left: 50%
-        transform: translateX(-50%)
-        max-width: 1260px
-        background: #C60800
-
-        .buttons
-            display: flex
-            justify-content: center
-            align-items: center
-
-            img
-                @include hide-when-short
-                width: 25px
-                height: 25px
-                margin-right: 10px
-                cursor: pointer
-                margin-left: 20px
-
-            button
-                background: #C60800
-                color: #fff
-                font-family: "Neue Haas Display", sans-serif
-                font-size: 14px
-                font-weight: 600
-                letter-spacing: 0.04em
-                cursor: pointer
-                border: white solid 1px
-                border-radius: 3px
-                padding: 7px
-
-        .pagesix-logo
-            @include hide-when-short
-            margin-right: 20px
-
-    .header-date
-        height: 20px
-        display: flex
-        align-items: center
-        justify-content: center
-        background-color: black
-
-        p
-            color: #fff
-            font-size: 14px
-            font-weight: 600
-            font-family: "Neue Haas Display", sans-serif
+@use "global.css"
 
 /* Main content */
 .body
@@ -721,8 +629,8 @@ header
                     h3
                         text-align: left
                         letter-spacing: -0.45px
-                        font-size: 15px
-                        line-height: 17px
+                        font-size: 16px
+                        line-height: 18px
                         font-family: "Neue Haas Display", sans-serif
                         font-weight: 700
                         color: black
@@ -731,7 +639,7 @@ header
                     padding-top: 0
                     border: none
                     h3
-                        letter-spacing: -0.16px
+                        letter-spacing: -0.45px
                         font-size: 16px
                         line-height: 18px
                         font-weight: 600

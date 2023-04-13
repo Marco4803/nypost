@@ -29,72 +29,6 @@
   font-weight: 900;
   font-style: normal;
 }
-/* Header */
-header {
-  background: #C60800;
-}
-header .header {
-  height: 46px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 1260px;
-  background: #C60800;
-}
-header .header .buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .header .buttons img {
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
-  cursor: pointer;
-  margin-left: 20px;
-}
-@media screen and (max-width: 1260px) {
-  header .header .buttons img {
-    visibility: hidden;
-  }
-}
-header .header .buttons button {
-  background: #C60800;
-  color: #fff;
-  font-family: "Neue Haas Display", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  border: white solid 1px;
-  border-radius: 3px;
-  padding: 7px;
-}
-header .header .pagesix-logo {
-  margin-right: 20px;
-}
-@media screen and (max-width: 1260px) {
-  header .header .pagesix-logo {
-    visibility: hidden;
-  }
-}
-header .header-date {
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-}
-header .header-date p {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-  font-family: "Neue Haas Display", sans-serif;
-}
 
 /* Main content */
 .body {
@@ -716,8 +650,8 @@ header .header-date p {
 .main-content main .categories .category ul li h3 {
   text-align: left;
   letter-spacing: -0.45px;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 16px;
+  line-height: 18px;
   font-family: "Neue Haas Display", sans-serif;
   font-weight: 700;
   color: black;
@@ -727,7 +661,7 @@ header .header-date p {
   border: none;
 }
 .main-content main .categories .category ul li:first-child h3 {
-  letter-spacing: -0.16px;
+  letter-spacing: -0.45px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 600;

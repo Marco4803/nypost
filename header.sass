@@ -1,0 +1,67 @@
+@use "global.css"
+
+$bigger: 1260px
+
+
+/* Header */
+@mixin hide-when-short
+    @media screen and (max-width: $bigger)
+        visibility: hidden
+
+header
+    background: #C60800
+
+    .header
+        height: 46px
+        padding: 20px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        max-width: 1260px
+        background: #C60800
+
+        .buttons
+            display: flex
+            justify-content: center
+            align-items: center
+
+            img
+                @include hide-when-short
+                width: 25px
+                height: 25px
+                margin-right: 10px
+                cursor: pointer
+                margin-left: 20px
+
+            button
+                background: #C60800
+                color: #fff
+                font-family: "Neue Haas Display", sans-serif
+                font-size: 14px
+                font-weight: 600
+                letter-spacing: 0.04em
+                cursor: pointer
+                border: white solid 1px
+                border-radius: 3px
+                padding: 7px
+
+        .pagesix-logo
+            @include hide-when-short
+            margin-right: 20px
+
+    .header-date
+        height: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: black
+
+        p
+            color: #fff
+            font-size: 14px
+            font-weight: 600
+            font-family: "Neue Haas Display", sans-serif
+
