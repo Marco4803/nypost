@@ -1,5 +1,9 @@
 @use "global.css"
 
+$bigger: 1024px
+$medium: 768px
+$small: 468px
+
 /* Main content */
 .body
     *
@@ -12,8 +16,13 @@
     .main-content
         display: grid
         padding: 30px 20px
-        grid-template-columns: minmax(0px, 1fr) 300px
-        column-gap: 30px
+
+        @media screen and (min-width: $bigger)
+            grid-template-columns: minmax(0px, 1fr) 300px
+            column-gap: 30px
+        @media screen and (max-width: $bigger)
+            grid-template-columns: minmax(0px, 1fr)
+            column-gap: 0
         margin-bottom: 50px
         height: max-content
 
@@ -258,8 +267,13 @@
     .main-article-with-sidebar
         display: grid
         margin: 20px 0
-        grid-template-columns: minmax(0, 1fr) 15.375em
-        grid-gap: 1.25em
+
+        @media screen and (min-width: $bigger)
+            grid-template-columns: minmax(0, 1fr) 15.375em
+            grid-gap: 1.25em
+        @media screen and (max-width: $bigger)
+            grid-template-columns: 2fr 1fr
+            column-gap: 1.25em
         align-content: start
 
         &.top-line

@@ -61,9 +61,7 @@ header .header .buttons {
 header .header .buttons img {
   width: 25px;
   height: 25px;
-  margin-right: 10px;
   cursor: pointer;
-  margin-left: 20px;
 }
 @media screen and (min-width: 1024px) {
   header .header .buttons img {
@@ -73,6 +71,16 @@ header .header .buttons img {
 @media screen and (max-width: 1024px) {
   header .header .buttons img {
     visibility: hidden;
+  }
+}
+@media screen and (min-width: 468px) {
+  header .header .buttons img {
+    margin: 0 10px 0 20px;
+  }
+}
+@media screen and (max-width: 468px) {
+  header .header .buttons img {
+    margin: 0;
   }
 }
 header .header .buttons button {
@@ -124,7 +132,6 @@ header .header .logo svg {
   z-index: 1;
   position: absolute;
   top: 0;
-  left: 0;
   transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 768px) {
@@ -139,6 +146,16 @@ header .header .logo svg {
     width: 215px;
   }
 }
+@media screen and (min-width: 468px) {
+  header .header .logo svg {
+    left: 0;
+  }
+}
+@media screen and (max-width: 468px) {
+  header .header .logo svg {
+    left: 20px;
+  }
+}
 header .header .pagesix-logo {
   margin-right: 20px;
   padding-right: 5px;
@@ -151,6 +168,16 @@ header .header .pagesix-logo {
 @media screen and (max-width: 1024px) {
   header .header .pagesix-logo {
     visibility: hidden;
+  }
+}
+@media screen and (min-width: 468px) {
+  header .header .pagesix-logo {
+    margin: 0 10px 0 20px;
+  }
+}
+@media screen and (max-width: 468px) {
+  header .header .pagesix-logo {
+    margin: 0;
   }
 }
 header .header-date {
