@@ -79,13 +79,24 @@
   color: rgb(198, 8, 0);
   font-weight: 600;
   font-family: "Neue Haas Display", sans-serif;
-  font-size: 70px;
-  line-height: 58px;
   text-align: center;
   text-transform: uppercase;
   vertical-align: baseline;
   box-sizing: border-box;
   margin: 0 0 16px;
+}
+@media (min-width: 600px) {
+  .main-content main article h3 {
+    font-size: 70px;
+    line-height: 58px;
+  }
+}
+@media (max-width: 600px) {
+  .main-content main article h3 {
+    font-size: 40px;
+    line-height: 31px;
+    letter-spacing: -0.72px;
+  }
 }
 .main-content main article a img {
   margin-bottom: 15px;
