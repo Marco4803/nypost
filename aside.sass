@@ -1,0 +1,213 @@
+@use "global.css"
+
+$bigger: 1024px
+$medium: 768px
+$small: 468px
+
+
+
+// ==========================================
+// ASIDE COMPONENTS:
+// Article
+// ==========
+.main-content aside
+    .follow-us
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 20px
+        padding: 10px 0
+        border-top: 3px solid black
+        border-bottom: 3px solid black
+
+        h4
+            line-height: 15px
+            letter-spacing: 0.96px
+            font-size: 16px
+            font-family: "Neue Haas Display", sans-serif
+            font-weight: 600
+            text-transform: uppercase
+            color: #C60800
+
+    .newsletter
+        margin-top: 20px
+
+        .category-name
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border-top: 2px solid black
+            border-bottom: 1px solid rgb(204, 204, 204)
+            padding: 6px 0
+            margin-bottom: 16px
+
+            h2 a
+                display: flex
+                justify-content: space-between
+                align-items: center
+                color: #C60800
+                text-transform: uppercase
+                font-weight: 600
+                font-family: "Neue Haas Display", sans-serif
+                font-size: 18px
+                line-height: .85
+                letter-spacing: 1.08px
+
+        img
+            margin: 0 20px 20px
+
+        .image
+            display: flex
+            align-self: center
+            justify-content: center
+            padding-bottom: 15px
+
+        h4
+            margin: 0 20px 10px
+            font-weight: 600
+            font-family: "Neue Haas Display", sans-serif
+            font-size: 22px
+            line-height: 24px
+            letter-spacing: -0.22px
+            text-align: center
+
+        h3
+            margin: 0 20px 10px
+            font-weight: 600
+            font-family: "Neue Haas Display", sans-serif
+            font-size: 16px
+            line-height: 17.6px
+            letter-spacing: -0.16px
+
+        p
+            margin: 0 20px
+            font-weight: 400
+            font-family: Arial, sans-serif
+            font-size: 16px
+            line-height: 20px
+            letter-spacing: -0.16px
+            color: rgb(88, 88, 88)
+
+            a
+                color: #C60800
+
+        .signup
+            margin-top: 20px
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+            &::before, &::after
+                content: ""
+                border-bottom: solid 3px black
+                display: inline-block
+                line-height: 20px
+                align-self: center
+                width: 100%
+
+            h6
+                width: max-content
+                padding: 0 10px
+
+                a
+                    font-weight: 600
+                    display: inline-block
+                    font-family: "Neue Haas Display", sans-serif
+                    font-size: 13px
+                    line-height: 14-3px
+                    letter-spacing: 1.04px
+                    text-transform: uppercase
+                    text-align: center
+                    white-space: nowrap
+
+    .columnists
+        border: 1px solid rgb(204, 204, 204)
+        margin-block-end: 10px
+        margin-top: 20px
+
+        h1
+            float: left
+            padding: 15px 20px 0
+            display: flex
+            flex-direction: column
+            height: max-content
+            margin-block-end: 10px
+
+            a
+                float: left
+                display: inline-block
+                color: black
+                text-transform: uppercase
+                font-style: italic
+                font-weight: 600
+                font-family: "Neue Haas Display", sans-serif
+                font-size: 23px
+                line-height: 16.8px
+                letter-spacing: -0.23px
+
+            &::after
+                margin: 2px -2px 0 -20px
+                height: 8px
+                background-color: #C60800
+                content: ""
+
+        ul
+            list-style: none
+            margin-top: 60px
+
+            li
+                padding: 0 20px 28px
+                border-bottom: 8px solid black
+
+                &:last-child
+                    border-bottom: none
+
+                h3
+                    display: block
+                    position: relative
+                    margin-bottom: 16px
+
+                    a
+                        display: block
+                        padding: 16px 0
+                        color: #C60800
+                        font-weight: 600
+                        font-family: "Neue Haas Display", sans-serif
+                        font-size: 15px
+                        line-height: 19px
+                        letter-spacing: -0.45px
+
+                    img
+                        position: absolute
+                        right: 0
+                        bottom: 1px
+
+
+                h4
+                    display: block
+
+                    a
+                        display: block
+                        color: black
+                        font-weight: 700
+                        font-family: "Neue Haas Display", sans-serif
+                        font-size: 15px
+                        line-height: 19px
+                        letter-spacing: -0.45px
+
+        h4.col
+            text-align: right
+            padding: 0 27px 22px 0
+
+            a
+                color: black
+                font-weight: 600
+                font-family: "Neue Haas Display", sans-serif
+                font-size: 13px
+                line-height: 14px
+                text-transform: uppercase
+                letter-spacing: 1.04px
+
+                &::after
+                    content: "▶"
+                    padding-left: 6px

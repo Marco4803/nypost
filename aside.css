@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("assets/fonts/neue-grotesk/NeueHaasDisplayBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("assets/fonts/neue-grotesk/NeueHaasDisplayBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("assets/fonts/neue-grotesk/NeueHaasDisplayBlack.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Haas Display";
+  src: url("assets/fonts/neue-grotesk/NeueHaasDisplayMediu.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.main-content aside .follow-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+.main-content aside .follow-us h4 {
+  line-height: 15px;
+  letter-spacing: 0.96px;
+  font-size: 16px;
+  font-family: "Neue Haas Display", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #C60800;
+}
+.main-content aside .newsletter {
+  margin-top: 20px;
+}
+.main-content aside .newsletter .category-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid black;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding: 6px 0;
+  margin-bottom: 16px;
+}
+.main-content aside .newsletter .category-name h2 a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #C60800;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Neue Haas Display", sans-serif;
+  font-size: 18px;
+  line-height: 0.85;
+  letter-spacing: 1.08px;
+}
+.main-content aside .newsletter img {
+  margin: 0 20px 20px;
+}
+.main-content aside .newsletter .image {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.main-content aside .newsletter h4 {
+  margin: 0 20px 10px;
+  font-weight: 600;
+  font-family: "Neue Haas Display", sans-serif;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: -0.22px;
+  text-align: center;
+}
+.main-content aside .newsletter h3 {
+  margin: 0 20px 10px;
+  font-weight: 600;
+  font-family: "Neue Haas Display", sans-serif;
+  font-size: 16px;
+  line-height: 17.6px;
+  letter-spacing: -0.16px;
+}
+.main-content aside .newsletter p {
+  margin: 0 20px;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+  color: rgb(88, 88, 88);
+}
+.main-content aside .newsletter p a {
+  color: #C60800;
+}
+.main-content aside .newsletter .signup {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-content aside .newsletter .signup::before, .main-content aside .newsletter .signup::after {
+  content: "";
+  border-bottom: solid 3px black;
+  display: inline-block;
+  line-height: 20px;
+  align-self: center;
+  width: 100%;
+}
+.main-content aside .newsletter .signup h6 {
+  width: max-content;
+  padding: 0 10px;
+}
+.main-content aside .newsletter .signup h6 a {
+  font-weight: 600;
+  display: inline-block;
+  font-family: "Neue Haas Display", sans-serif;
+  font-size: 13px;
+  line-height: 11px;
+  letter-spacing: 1.04px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+}
+.main-content aside .columnists {
+  border: 1px solid rgb(204, 204, 204);
+  margin-block-end: 10px;
+  margin-top: 20px;
+}
+.main-content aside .columnists h1 {
+  float: left;
+  padding: 15px 20px 0;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  margin-block-end: 10px;
+}
+.main-content aside .columnists h1 a {
+  float: left;
+  display: inline-block;
+  color: black;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 600;
+  font-family: "Neue Haas Display", sans-serif;
+  font-size: 23px;
+  line-height: 16.8px;
+  letter-spacing: -0.23px;
+}
+.main-content aside .columnists h1::after {
+  margin: 2px -2px 0 -20px;
+  height: 8px;
+  background-color: #C60800;
+  content: "";
+}
+.main-content aside .columnists ul {
+  list-style: none;
+  margin-top: 60px;
+}
+.main-content aside .columnists ul li {
+  padding: 0 20px 28px;
+  border-bottom: 8px solid black;
+}
+.main-content aside .columnists ul li:last-child {
+  border-bottom: none;
+}
+.main-content aside .columnists ul li h3 {
+  display: block;
+  position: relative;
+  margin-bottom: 16px;
+}
+.main-content aside .columnists ul li h3 a {
+  display: block;
+  padding: 16px 0;
+  color: #C60800;
+  font-weight: 600;
+  font-family: "Neue Haas Display", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.45px;
+}
+.main-content aside .columnists ul li h3 img {
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+}
+.main-content aside .columnists ul li h4 {
+  display: block;
+}
+.main-content aside .columnists ul li h4 a {
+  display: block;
+  color: black;
+  font-weight: 700;
+  font-family: "Neue Haas Display", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: -0.45px;
+}
+.main-content aside .columnists h4.col {
+  text-align: right;
+  padding: 0 27px 22px 0;
+}
+.main-content aside .columnists h4.col a {
+  color: black;
+  font-weight: 600;
+  font-family: "Neue Haas Display", sans-serif;
+  font-size: 13px;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.04px;
+}
+.main-content aside .columnists h4.col a::after {
+  content: "▶";
+  padding-left: 6px;
+}
+
+/*# sourceMappingURL=aside.css.map */
