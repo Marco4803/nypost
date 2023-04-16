@@ -84,6 +84,9 @@
     border-top: solid 1px rgb(204, 204, 204);
     border-left: none;
   }
+  .main-content main .articles-in-thirds article .article-info {
+    width: 100%;
+  }
 }
 .main-content main .articles-in-thirds article a {
   text-decoration: none;
@@ -100,13 +103,13 @@
   letter-spacing: -0.18px;
 }
 @media (max-width: 768px) {
-  .main-content main .articles-in-thirds article a {
+  .main-content main .articles-in-thirds article a.image-anchor {
     width: 144px;
     height: 96px;
     margin-right: 15px;
   }
 }
-.main-content main .articles-in-thirds article a img {
+.main-content main .articles-in-thirds article a.image-anchor img {
   width: 100vw;
   margin-bottom: 10px;
   display: block;
@@ -114,9 +117,9 @@
   max-width: 100%;
 }
 @media (max-width: 768px) {
-  .main-content main .articles-in-thirds article a img {
-    width: 144px;
-    height: 96px;
+  .main-content main .articles-in-thirds article a.image-anchor img {
+    min-width: 144px;
+    min-height: 96px;
   }
 }
 .main-content main .articles-in-thirds article h3 {
@@ -168,15 +171,16 @@
   margin: 20px 0;
   grid-gap: 1.25em;
   align-content: start;
+  grid-template-columns: minmax(0, 1fr) 15.375em;
 }
-@media screen and (min-width: 1024px) {
-  .main-content main .main-article-with-sidebar {
-    grid-template-columns: minmax(0, 1fr) 15.375em;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 37.5rem) and (max-width: 63.9375rem) {
   .main-content main .main-article-with-sidebar {
     grid-template-columns: 2fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .main-content main .main-article-with-sidebar {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 .main-content main .main-article-with-sidebar.top-line {
@@ -186,11 +190,7 @@
 }
 .main-content main .main-article-with-sidebar.bottom-line {
   padding-bottom: 20px;
-}
-@media screen and (min-width: 1024px) {
-  .main-content main .main-article-with-sidebar.bottom-line {
-    border-bottom: 1px solid rgb(204, 204, 204);
-  }
+  border-bottom: 1px solid rgb(204, 204, 204);
 }
 @media screen and (max-width: 1024px) {
   .main-content main .main-article-with-sidebar.bottom-line {
@@ -204,6 +204,12 @@
   flex-direction: column;
   padding-right: 20px;
   border-right: 1px solid rgb(204, 204, 204);
+}
+@media (max-width: 600px) {
+  .main-content main .main-article-with-sidebar article.main-article {
+    padding-right: 0;
+    border-right: none;
+  }
 }
 .main-content main .main-article-with-sidebar article.main-article h2 {
   width: 100%;
@@ -220,6 +226,13 @@
   color: black;
   width: 100%;
   text-align: left;
+}
+@media (max-width: 600px) {
+  .main-content main .main-article-with-sidebar article.main-article h2 a {
+    line-height: 28px;
+    letter-spacing: -0.26px;
+    font-size: 26px;
+  }
 }
 .main-content main .main-article-with-sidebar article.main-article h2 a b {
   color: #C60800;
@@ -272,12 +285,54 @@
   line-height: 18px;
   margin-bottom: 20px;
 }
+@media (max-width: 600px) {
+  .main-content main .main-article-with-sidebar div.sidebar article {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 96px;
+    padding: 20px 0 96px;
+    border-top: solid 1px rgb(204, 204, 204);
+  }
+}
+@media (max-width: 768px) {
+  .main-content main .main-article-with-sidebar div.sidebar article a {
+    width: 180px;
+    height: 120px;
+  }
+}
+@media (max-width: 600px) {
+  .main-content main .main-article-with-sidebar div.sidebar article a {
+    width: 144px;
+    height: 96px;
+    position: absolute;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  .main-content main .main-article-with-sidebar div.sidebar article a img {
+    width: 180px;
+    height: 120px;
+  }
+}
+@media (max-width: 600px) {
+  .main-content main .main-article-with-sidebar div.sidebar article a img {
+    width: 144px;
+    height: 96px;
+  }
+}
 .main-content main .main-article-with-sidebar div.sidebar article h2 {
   width: 100%;
   text-align: left;
   padding-bottom: 16px;
   border-bottom: solid 1px rgb(204, 204, 204);
   margin-bottom: 0;
+}
+@media (max-width: 600px) {
+  .main-content main .main-article-with-sidebar div.sidebar article h2 {
+    border-bottom: none;
+    left: 159px;
+  }
 }
 .main-content main .main-article-with-sidebar div.sidebar article h2 a {
   line-height: 1.3;
@@ -291,13 +346,23 @@
   text-align: left;
   display: inline;
 }
-.main-content main .main-article-with-sidebar div.sidebar .bottom-article {
-  margin-bottom: 0;
+@media (max-width: 600px) {
+  .main-content main .main-article-with-sidebar div.sidebar article .article-info-sidebar {
+    position: relative;
+    border-bottom: none;
+    left: 159px;
+    width: calc(100% - 159px);
+  }
 }
-.main-content main .main-article-with-sidebar div.sidebar .bottom-article h2 {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
+@media (min-width: 600px) {
+  .main-content main .main-article-with-sidebar div.sidebar .bottom-article {
+    margin-bottom: 0;
+  }
+  .main-content main .main-article-with-sidebar div.sidebar .bottom-article h2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 .main-content main .main-article-with-sidebar div.sidebar .flags {
   margin-bottom: 5px;

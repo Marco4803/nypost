@@ -52,6 +52,11 @@
     column-gap: 0;
   }
 }
+@media screen and (max-width: 600px) {
+  .body .main-content {
+    padding: 30px 10px;
+  }
+}
 .body .main-content main {
   height: max-content;
   width: 100%;
