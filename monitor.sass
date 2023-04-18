@@ -147,6 +147,13 @@ $small: 468px
             grid-template-columns: 2fr 1fr
         @media (max-width: 600px)
             grid-template-columns: minmax(0, 1fr)
+        @media (max-width: 1023px)
+            &.has-topic
+                grid-template-columns: 1fr
+
+                article.main-article
+                    padding-right: 0
+                    border-right: none
 
         &.top-line
             margin-top: 0
@@ -304,11 +311,14 @@ $small: 468px
 
 
             .bottom-article
+                padding-bottom: 0
+
                 @media (min-width: 600px)
                     margin-bottom: 0
+
                     h2
-                        margin-bottom: 0
                         padding-bottom: 0
+                        margin-bottom: 0
                         border-bottom: none
 
             .flags

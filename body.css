@@ -253,6 +253,11 @@
   justify-content: space-between;
   position: relative;
 }
+@media (max-width: 768px) {
+  .main-content main .header-line-through {
+    text-align: center;
+  }
+}
 .main-content main .header-line-through::before {
   background-color: black;
   content: "";

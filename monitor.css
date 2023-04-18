@@ -183,6 +183,15 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+@media (max-width: 1023px) {
+  .main-content main .main-article-with-sidebar.has-topic {
+    grid-template-columns: 1fr;
+  }
+  .main-content main .main-article-with-sidebar.has-topic article.main-article {
+    padding-right: 0;
+    border-right: none;
+  }
+}
 .main-content main .main-article-with-sidebar.top-line {
   margin-top: 0;
   padding-top: 20px;
@@ -354,13 +363,16 @@
     width: calc(100% - 159px);
   }
 }
+.main-content main .main-article-with-sidebar div.sidebar .bottom-article {
+  padding-bottom: 0;
+}
 @media (min-width: 600px) {
   .main-content main .main-article-with-sidebar div.sidebar .bottom-article {
     margin-bottom: 0;
   }
   .main-content main .main-article-with-sidebar div.sidebar .bottom-article h2 {
-    margin-bottom: 0;
     padding-bottom: 0;
+    margin-bottom: 0;
     border-bottom: none;
   }
 }
