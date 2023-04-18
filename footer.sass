@@ -10,15 +10,35 @@ footer
 
         .logo
             display: flex
+            align-content: center
+            justify-content: flex-start
             margin-bottom: 16px
+
+            @media (max-width: 1024px)
+                flex-direction: column
+                align-items: center
+                justify-content: center
 
             svg
                 max-width: 234px
                 height: 34px
 
+                @media (max-width: 1024px)
+                    padding-left: 10px
+                    margin-bottom: 10px
+
+            img
+                padding-left: 10px
+
+                @media (max-width: 1024px)
+                    padding: 0
+
         .links
             border-bottom: 1px solid rgb(204, 204, 204)
             padding-bottom: 20px
+
+            @media (max-width: 1024px)
+                display: none
 
             ul
                 display: flex

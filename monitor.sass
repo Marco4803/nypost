@@ -414,6 +414,11 @@ $small: 468px
         grid-gap: 20px
         grid-template-columns: repeat(3, minmax(0, 1fr))
 
+        @media (max-width: 768px)
+            grid-template-columns: 1fr
+        @media (max-width: 600px)
+            margin: 30px 0 10px
+
         .category
             .category-name
                 border-top: 2px solid black
@@ -473,6 +478,9 @@ $small: 468px
 
     .videos-category
         margin: 30px 0 20px
+
+        @media (max-width: 600px)
+            margin: 30px 0 10px
 
         .category-name
             display: flex

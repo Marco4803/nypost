@@ -10,15 +10,43 @@ footer section {
 }
 footer section .logo {
   display: flex;
+  align-content: center;
+  justify-content: flex-start;
   margin-bottom: 16px;
+}
+@media (max-width: 1024px) {
+  footer section .logo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 footer section .logo svg {
   max-width: 234px;
   height: 34px;
 }
+@media (max-width: 1024px) {
+  footer section .logo svg {
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+}
+footer section .logo img {
+  padding-left: 10px;
+}
+@media (max-width: 1024px) {
+  footer section .logo img {
+    padding: 0;
+  }
+}
 footer section .links {
   border-bottom: 1px solid rgb(204, 204, 204);
   padding-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  footer section .links {
+    display: none;
+  }
 }
 footer section .links ul {
   display: flex;

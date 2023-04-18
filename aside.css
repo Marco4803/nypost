@@ -67,14 +67,16 @@
   line-height: 0.85;
   letter-spacing: 1.08px;
 }
-.main-content aside .newsletter img {
-  margin: 0 20px 20px;
-}
 .main-content aside .newsletter .image {
   display: flex;
   align-self: center;
   justify-content: center;
   padding-bottom: 15px;
+}
+.main-content aside .newsletter .image img {
+  margin: 0 20px;
+  width: 100%;
+  height: auto;
 }
 .main-content aside .newsletter h4 {
   margin: 0 20px 10px;
