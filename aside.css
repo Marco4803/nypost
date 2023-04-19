@@ -242,5 +242,11 @@
   content: "▶";
   padding-left: 6px;
 }
+.main-content aside .columnists h4.col a:hover {
+  color: #C60800;
+}
+.main-content aside .columnists h4.col a:hover::after {
+  color: #C60800;
+}
 
 /*# sourceMappingURL=aside.css.map */

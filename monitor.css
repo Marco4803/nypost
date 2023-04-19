@@ -673,6 +673,14 @@
   color: black;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .main-content main .videos-category div.other-videos .video a h3 {
+    line-height: 20px;
+    letter-spacing: -0.18px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
 .main-content main .videos-category div.other-videos .video a img {
   margin-right: 15px;
   width: 9rem;
