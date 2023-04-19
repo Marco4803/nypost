@@ -35,6 +35,7 @@
     display: none;
   }
 }
+
 .main-content aside .follow-us {
   display: flex;
   align-items: center;
@@ -58,6 +59,7 @@
   text-transform: uppercase;
   color: #C60800;
 }
+
 .main-content aside .newsletter {
   margin-top: 20px;
 }
@@ -151,6 +153,7 @@
   text-align: center;
   white-space: nowrap;
 }
+
 .main-content aside .columnists {
   border: 1px solid rgb(204, 204, 204);
   margin-block-end: 10px;
