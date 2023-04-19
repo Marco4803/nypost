@@ -230,16 +230,7 @@
 }
 @media (max-width: 420px) {
   .main-content main .hot-topic h2 a {
-    font-size: 22px;
-    line-height: 21px;
-    letter-spacing: 1.4px;
-  }
-}
-@media (max-width: 380px) {
-  .main-content main .hot-topic h2 a {
-    font-size: 22px;
-    line-height: 21px;
-    letter-spacing: 1.3px;
+    white-space: break-spaces;
   }
 }
 

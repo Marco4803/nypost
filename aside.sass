@@ -11,6 +11,16 @@ $small: 468px
 // Article
 // ==========
 .main-content aside
+    .aside-ad
+        width: 100%
+        height: 600px
+        background-color: rgb(246, 246, 246)
+
+        @media (max-width: 1024px)
+            display: none
+
+
+
     .follow-us
         display: flex
         align-items: center
@@ -19,6 +29,9 @@ $small: 468px
         padding: 10px 0
         border-top: 3px solid black
         border-bottom: 3px solid black
+
+        @media (max-width: 1024px)
+            margin-top: 60px
 
         h4
             line-height: 15px

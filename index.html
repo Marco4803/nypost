@@ -19,7 +19,7 @@
 <header>
     <div class="header">
         <div class="buttons">
-            <button>
+            <button onclick="alert('This button is for display purposes only. You can look at it, but cannot interact with it! :P')">
                 <span class="menu-icon">
                     <span></span>
                     <span></span>
@@ -34,17 +34,17 @@
         <div class="pagesix-logo"><img src="assets/images/pagesix.png" alt="The New York Post logo" width="206" height="40"></div>
     </div>
     <div class="header-date">
-        <p>APRIL 13, 2023</p>
+        <p id="today">APRIL 13, 2023</p>
     </div>
 </header>
 <section class="body">
     <section class="main-content">
         <main>
             <article>
-                <h3>Tech exec tragedy</h3>
-                <a><img src="assets/articles/tech_executive.png" alt=""></a>
-                <h2 style="text-align: center;"><a>Tech honcho and Cash App founder, 43, stabbed to death in San Fran: reports</a></h2>
-                <p><a>Businessman Bob Lee, who founded Cash App, has been stabbed to death in San Francisco, Calif. Tuesday, according to reports.</a></p>
+                <h3 id="title">Tech exec tragedy</h3>
+                <a id="image"><img src="assets/articles/tech_executive.png" alt=""></a>
+                <h2 id="subtitle" style="text-align: center;"><a>Tech honcho and Cash App founder, 43, stabbed to death in San Fran: reports</a></h2>
+                <p id="paragraph"><a>Businessman Bob Lee, who founded Cash App, has been stabbed to death in San Francisco, Calif. Tuesday, according to reports.</a></p>
             </article>
 
             <section class="articles-in-thirds">
@@ -498,11 +498,10 @@
 
                 </div>
             </section>
-
         </main>
 
         <aside>
-            <section style="width: 100%; height: 600px; background-color: rgb(246, 246, 246);"></section>
+            <section class="aside-ad"></section>
             <section class="follow-us">
                 <h4>Follow us</h4>
                 <img src="assets/images/followus.png" width="190" height="35" alt>
@@ -682,5 +681,9 @@
     </div>
     <a class="logo"><img src="assets/images/wordpress.png" width="187" height="26" alt="Powered by WordPress VIP"></a>
 </footer>
+
+<script>
+    document.getElementById("today").innerText = Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(Date.now()).toUpperCase();
+</script>
 </body>
 </html>

@@ -584,10 +584,20 @@
   grid-template-columns: minmax(0, 1fr) 335px;
   grid-gap: 20px;
 }
+@media (max-width: 768px) {
+  .main-content main .videos-category .videos {
+    grid-template-columns: 1fr;
+  }
+}
 .main-content main .videos-category .videos .main-video h3 {
   width: 100%;
   text-align: left;
   margin: -35px 0 16px;
+}
+@media (max-width: 768px) {
+  .main-content main .videos-category .videos .main-video h3 {
+    margin: -35px 0 0;
+  }
 }
 .main-content main .videos-category .videos .main-video h3 a {
   line-height: 24px;
@@ -629,6 +639,12 @@
   justify-content: space-between;
   position: relative;
   padding-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .main-content main .videos-category div.other-videos .video a {
+    border-top: 1px solid rgb(204, 204, 204);
+    padding: 10px 0;
+  }
 }
 .main-content main .videos-category div.other-videos .video a h3 {
   height: 3px;

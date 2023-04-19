@@ -93,6 +93,15 @@ header .header .buttons button {
   border-radius: 2px;
   padding: 7px;
 }
+header .header .buttons button:hover {
+  background-color: white;
+}
+header .header .buttons button:hover .menu-text {
+  color: black;
+}
+header .header .buttons button:hover .menu-icon span {
+  background-color: black;
+}
 header .header .buttons button .menu-text {
   color: #fff;
   font-family: "Neue Haas Display", sans-serif;

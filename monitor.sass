@@ -487,6 +487,9 @@ $small: 468px
         @media (max-width: 600px)
             margin: 30px 0 10px
 
+        @media (max-width: 768px)
+
+
         .category-name
             display: flex
             justify-content: space-between
@@ -521,6 +524,8 @@ $small: 468px
         .videos
             display: grid
             grid-template-columns: minmax(0, 1fr) 335px
+            @media (max-width: 768px)
+                grid-template-columns: 1fr
             grid-gap: 20px
 
             .main-video
@@ -528,6 +533,8 @@ $small: 468px
                     width: 100%
                     text-align: left
                     margin: -35px 0 16px
+                    @media (max-width: 768px)
+                        margin: -35px 0 0
 
                     a
                         line-height: 24px
@@ -572,6 +579,10 @@ $small: 468px
                     justify-content: space-between
                     position: relative
                     padding-bottom: 20px
+
+                    @media (max-width: 768px)
+                        border-top: 1px solid rgb(204, 204, 204)
+                        padding: 10px 0
 
                     h3
                         height: 3px
