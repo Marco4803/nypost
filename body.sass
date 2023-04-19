@@ -258,14 +258,17 @@ $small: 468px
 // ==========
 .main-content main
     .header-line-through
-        margin: 20px 0
+        margin: 20px 0 0
         padding: 20px 0 0
         display: flex
         flex-wrap: wrap
         justify-content: space-between
         position: relative
         @media (max-width: 768px)
-            text-align: center
+            display: grid
+            grid-template-columns: 1fr
+            align-items: center
+            justify-content: center
 
         &::before
             background-color: black
@@ -278,11 +281,20 @@ $small: 468px
             width: calc(100% - 1px)
             z-index: 0
 
+            @media (max-width: 768px)
+                top: calc(50% - 21px)
+
 
 
         .left
             padding: 0 20px 0 25px
             margin-bottom: 6px
+            align-items: center
+
+            @media (max-width: 768px)
+                margin-bottom: 18px
+                padding: 0 calc(50vw - 135px/2 - 45px) 0 calc(50vw - 135px/2 - 35px)
+
 
             h3
                 margin-right: 0
@@ -292,7 +304,7 @@ $small: 468px
                 border-color: black
                 border-style: solid
                 margin-block: 0
-                max-width: 100%
+                max-width: max-content
                 transform: skew(-10deg)
                 box-shadow: -1px 1px 0 black,-2px 2px 0 black,-3px 3px 0 black,-4px 4px 0 black,-5px 5px 0 black,-6px 6px 0 black
                 white-space: nowrap
@@ -317,6 +329,9 @@ $small: 468px
             display: flex
             align-items: center
 
+            @media (max-width: 768px)
+                padding: 0 calc(50vw - 260px/2 - 40px)
+
             h4
                 padding: 0 10px
                 background-color: white
@@ -336,6 +351,9 @@ $small: 468px
             align-items: center
             background-color: white
             z-index: 1
+
+            @media (max-width: 768px)
+                display: none
 
             a
                 margin-bottom: 10px

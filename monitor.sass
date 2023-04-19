@@ -21,12 +21,25 @@ $small: 468px
 
         border-top: 1px solid rgb(204, 204, 204)
 
-        &.double-col-gap
-            column-gap: 20px
-        &.no-border
-            border-top: none
-        &.no-padding
-            padding-top: 0
+        @media (min-width: 767px)
+            &.special
+                column-gap: 20px
+                border-top: none
+                padding-top: 0
+        @media (max-width: 768px)
+            &.special
+                column-gap: 20px
+                border-top: none
+                padding-top: 0
+                margin-top: 0
+
+                article
+                    padding: 10px 0 20px
+                    border-bottom: 1px solid rgb(204, 204, 204)
+
+                    &:last-child
+                        border-bottom: none
+                        padding-bottom: 0
 
         article
             width: 100%
